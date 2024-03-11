@@ -1,0 +1,245 @@
+/* genel */
+*{
+    font-size: small;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+body{
+    background-color: rgba(20,26,43,255);
+  
+}
+.row{
+    --bs-gutter-x: 0
+}
+.pad{
+border-radius: 5px;
+padding-bottom: 8px;
+padding-top: 8px;
+padding-right: 14px;
+padding-left: 14px;
+}
+.boyut{
+    font-size: 20px;
+}
+.cont-marg{
+    margin-top: 15%;
+}
+.card-bg{
+    background-color: #1d263b;
+    color: white;
+}
+.card-bg p{
+    color: grey;
+}
+.bg{
+    background-color: #1649ff;
+    color: white;
+}
+.bg2{
+    background-color: rgb(174, 167, 167,0.3);
+    color: white;
+}
+.bg3{
+    background-color: #1d263b;
+    color:white;
+}
+.margin{
+    margin-right: 12px;
+}
+.metin{
+    color: grey;
+}
+.baslik{
+    font-size: 40px;
+}
+a {
+    text-decoration: none;
+}
+/* defi-hero */
+.photo{
+    max-width: 100%; 
+    height: auto;
+ }
+ .button{
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo{
+    font-size: large;
+    background-color: #1649ff;
+    border-radius: 50%;
+}
+.hero{
+    margin-top: 100px; 
+ }
+.navbar{
+    margin-top: 4%;
+}
+.icons ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+.icons ul li {
+    position: relative;
+    display: inline-block;
+    margin-left: 60px;
+    
+}
+.icon{
+    color: grey;
+    font-size: medium;
+}
+
+@media screen and (max-width: 576px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15%;
+    }
+
+    .hero-text,
+    .hero-photo {
+        width: 100%;
+    }
+
+    .hero-text {
+        margin-bottom: 30px;
+    }
+ 
+    .baslik{
+        font-size: 20px;
+    }
+    .metin{
+        font-size: 10px;
+    }
+    .nav-button{
+        display: none;
+    }
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    font-size: smaller;
+} 
+.featured{
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15%;
+    }
+
+    .hero-text,
+    .hero-photo {
+        width: 100%;
+    }
+
+    .hero-text {
+        margin-bottom: 30px;
+    }
+
+}
+/* why-defi */
+.card-icon {
+    background-color: #1649ff;
+    border-radius: 50%;
+    color: white;
+    font-size: x-large;
+    display: inline-flex; /* Dışındaki kutunun boyutunu içerideki içeriğe göre ayarlamak için */
+    align-items: center; /* İçeriği dikeyde hizalamak için */
+    justify-content: center; /* İçeriği yatayda hizalamak için */
+}
+.box{
+    padding: 50px 25px;
+    margin: 5%;
+    background-color:#1d263b;
+    border-radius: 10%;
+}
+.card-title ,
+.defi-popular-box-title h3{
+font-size: medium;
+}
+.card-text{
+    font-size: smaller;
+    color: grey !important;
+}
+@media screen and (max-width: 576px){
+    .why-defi-title{
+        text-align: center;
+    }
+  
+}
+/* how-work */
+.how-work-box{
+    background-color: #1d263b;
+    border-radius: 10%;
+    
+
+}
+.hidden-metin {
+    display: none;
+}
+.human-icon{
+    background-color: #1649ff;
+    border-radius: 50%;
+    padding: 10px 15px;
+   font-size: 40px;
+}
+.human-a-icon {
+    margin-top: 25%;
+}
+.content-icon{
+    background-color: #1649ff;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 4px 6px;
+}
+.content h3{
+    font-size: medium;
+}
+.toggle-btn ,.tog-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    color: inherit;
+    padding: 0;
+  }
+
+/* defi-popular */
+.defi-popular-box{
+    padding: 50px 25px;
+    margin: 5%;
+    background-color:#1d263b;
+    border-radius: 10%;
+
+}
+.defi-popular-box-icon{
+background-color: rgb(174, 167, 167,0.3);
+padding: 4px 6px;
+border-radius: 50%;
+font-size: 25px;
+}
+
+
+
+
+.social-icon{
+    background-color:  rgb(174, 167, 167,0.3);
+    border-radius: 10%;
+    padding: 2%;
+}
+.baslik{
+    font-size: small;
+}
