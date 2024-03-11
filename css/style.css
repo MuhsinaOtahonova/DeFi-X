@@ -184,7 +184,7 @@ font-size: medium;
 .how-work-box{
     background-color: #1d263b;
     border-radius: 10%;
-    
+    position: relative;
 
 }
 .hidden-metin {
@@ -197,7 +197,11 @@ font-size: medium;
    font-size: 40px;
 }
 .human-a-icon {
-    margin-top: 25%;
+   translate: translateX(-50%);
+   bottom: -10px;
+   left: 50%;
+   position: absolute;
+
 }
 .content-icon{
     background-color: #1649ff;
