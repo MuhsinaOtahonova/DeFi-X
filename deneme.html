@@ -1,69 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bitcoin Carousel</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    .defi-popular-box {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        margin-bottom: 20px;
-    }
-    .hide {
-        display: none; /* Tüm kutuları gizle */
-    }
+    row > .col-xs-3 {
+    display:flex;
+    flex: 0 0 25%;
+    max-width: 25%
+}
+
+.flex-nowrap {
+    -webkit-flex-wrap: nowrap!important;
+    -ms-flex-wrap: nowrap!important;
+    flex-wrap: nowrap!important;
+}
+.flex-row {
+    display:flex;
+    -webkit-box-orient: horizontal!important;
+    -webkit-box-direction: normal!important;
+    -webkit-flex-direction: row!important;
+    -ms-flex-direction: row!important;
+    flex-direction: row!important;
+}
+#list .row {white-space:nowrap;}
+#list .row > div {display:inline-block;float:none;}
+.defi-popular-box,
+.about-us-box {
+   padding: 50px 25px;
+   background-color: #1d263b;
+   border-radius: 10%;
+}
 </style>
-</head>
-<body>
-<div class="container">
-    <div class="row" id="bitcoin-carousel">
-        <div class="col-md-4">
-            <div class="defi-popular-box">
+<div class="container-fluid">
+    <div class="row flex-row flex-nowrap">
+        <div class="col-3">
+            <div class="about-us-box">
                 <div class="d-flex">
                     <div class="">
-                        <i class="bi bi-currency-bitcoin defi-popular-box-icon"></i>
+                        <i class=" defi-popular-box-icon bi bi-person-fill"></i>
                     </div>
-                    <div class="defi-popular-box-title mx-3">
-                        <h3>Bitcoin 1</h3>
-                        <p class="metin">Cryptocurrency</p>
+                    <div class="title mx-3">
+                        <h3>Clara Ross</h3>
+                        <p class="text">Cryptocurrency</p>
                     </div>
                 </div>
-                <hr>
                 <div>
-                    <p class="metin ">Lorem ipsum dolor sit amet consectetur adipisicing
+                    <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing
                         elit. Quasi adipisci facilis reiciendis animi minus molestiae.</p>
-                    <button class="tog-btn">Invest in Bitcoin &#62;</button>
                 </div>
             </div>
         </div>
-        <!-- Diğer kutular burada devam eder -->
+        <div class="col-3">
+            <div class="about-us-box">
+                <div class="d-flex">
+                    <div class="">
+                        <i class=" defi-popular-box-icon bi bi-person-fill"></i>
+                    </div>
+                    <div class="title mx-3">
+                        <h3>Clara Ross</h3>
+                        <p class="text">Cryptocurrency</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quasi adipisci facilis reiciendis animi minus molestiae.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="about-us-box">
+            <div class="d-flex">
+                <div class="">
+                    <i class=" defi-popular-box-icon bi bi-person-fill"></i>
+                </div>
+                <div class="title mx-3">
+                    <h3>Clara Ross</h3>
+                    <p class="text">Cryptocurrency</p>
+                </div>
+            </div>
+            <div>
+                <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Quasi adipisci facilis reiciendis animi minus molestiae.</p>
+            </div>
+        </div>
+        </div>
+        <div class="col-3">
+            <div class="about-us-box">
+                <div class="d-flex">
+                    <div class="">
+                        <i class=" defi-popular-box-icon bi bi-person-fill"></i>
+                    </div>
+                    <div class="title mx-3">
+                        <h3>Clara Ross</h3>
+                        <p class="text">Cryptocurrency</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quasi adipisci facilis reiciendis animi minus molestiae.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="about-us-box">
+                <div class="d-flex">
+                    <div class="">
+                        <i class=" defi-popular-box-icon bi bi-person-fill"></i>
+                    </div>
+                    <div class="title mx-3">
+                        <h3>Clara Ross</h3>
+                        <p class="text">Cryptocurrency</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quasi adipisci facilis reiciendis animi minus molestiae.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="about-us-box">
+                <div class="d-flex">
+                    <div class="">
+                        <i class=" defi-popular-box-icon bi bi-person-fill"></i>
+                    </div>
+                    <div class="title mx-3">
+                        <h3>Clara Ross</h3>
+                        <p class="text">Cryptocurrency</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quasi adipisci facilis reiciendis animi minus molestiae.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="about-us-box">
+                <div class="d-flex">
+                    <div class="">
+                        <i class=" defi-popular-box-icon bi bi-person-fill"></i>
+                    </div>
+                    <div class="title mx-3">
+                        <h3>Clara Ross</h3>
+                        <p class="text">Cryptocurrency</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quasi adipisci facilis reiciendis animi minus molestiae.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="about-us-box">
+                <div class="d-flex">
+                    <div class="">
+                        <i class=" defi-popular-box-icon bi bi-person-fill"></i>
+                    </div>
+                    <div class="title mx-3">
+                        <h3>Clara Ross</h3>
+                        <p class="text">Cryptocurrency</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text ">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Quasi adipisci facilis reiciendis animi minus molestiae.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-    const bitcoinCarousel = document.getElementById('bitcoin-carousel');
-    const bitcoinBoxes = bitcoinCarousel.querySelectorAll('.defi-popular-box');
-    const interval = 5000; // 5 seconds
-    let currentIndex = 0;
-
-    function moveCarousel() {
-        bitcoinBoxes[currentIndex].classList.add('hide'); // Aktif kutuyu gizle
-        currentIndex = (currentIndex + 1) % bitcoinBoxes.length;
-        bitcoinBoxes[currentIndex].classList.remove('hide'); // Yeni aktif kutuyu göster
+    window.addEventListener('mousewheel', function(e){
+    e.preventDefault();
+    var step = -100;  
+    if (e.wheelDelta < 0) {
+      step *= -1;
     }
-
-    // Initial setup
-    for (let i = 3; i < bitcoinBoxes.length; i++) {
-        bitcoinBoxes[i].classList.add('hide'); // İlk üç kutuyu göster
-    }
-
-    // Start carousel
-    setInterval(moveCarousel, interval);
-});
+    var newPos = window.pageXOffset + step;
+    $('body').scrollLeft(newPos);    
+})
 </script>
 </body>
 </html>
