@@ -1,67 +1,30 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var scrollInterval = 2000;
+function shiftBoxes() {
+    // İki wrapper'ı da seçelim
+    var firstWrapper = document.querySelector('.about-us-boxes');
+    var secondWrapper = document.querySelector('.defi-popular-boxes');
 
-    var wrapper = document.querySelector('.wrapper');
-    var boxes = document.querySelectorAll('.defi-popular-box');
+    // İlk wrapper için işlemler
+    shiftWrapper(firstWrapper);
 
-    var scrollDistance = boxes[0].offsetWidth + 15;
+    // İkinci wrapper için işlemler
+    shiftWrapper(secondWrapper);
+}
 
-    
-    var activeIndex = 0;
+function shiftWrapper(wrapper) {
+    var firstBox = wrapper.firstElementChild;
+    var boxWidth = firstBox.offsetWidth; 
 
-   
-    var autoScroll;
+    wrapper.style.transition = "transform 0.5s ease-in-out";
+    wrapper.style.transform = "translateX(-"+(boxWidth)+")";
 
-    
-    document.querySelector('.defi-popular').addEventListener('mouseenter', function() {
-        autoScroll = setInterval(function() {
-            wrapper.scrollLeft += scrollDistance;
-            
-            activeIndex++;
+    setTimeout(function() {
+        wrapper.removeChild(firstBox); 
+        wrapper.appendChild(firstBox); 
+    }, 500); 
+}
 
-            if (activeIndex >= boxes.length) {
-                wrapper.scrollLeft = 0;
-                activeIndex = 0;
-            }
-        }, scrollInterval);
-    });
-    document.querySelector('.defi-popular').addEventListener('mouseleave', function() {
-        clearInterval(autoScroll);
-    });
-});
+setInterval(shiftBoxes, 6000);
 
-
-document.addEventListener("DOMContentLoaded", function() {
-    var scrollInterval1 = 2000;
-
-    var wrapper1 = document.querySelector('.wrapper1');
-    var boxes1 = document.querySelectorAll('.about-us-box');
-
-    var scrollDistance1 = boxes1[0].offsetWidth + 15;
-
-    
-    var activeIndex1 = 0;
-
-   
-    var autoScroll1;
-
-    
-    document.querySelector('.about-us').addEventListener('mouseenter', function() {
-        autoScroll1 = setInterval(function() {
-            wrapper1.scrollLeft += scrollDistance1;
-            
-            activeIndex1++;
-
-            if (activeIndex1 >= boxes1.length) {
-                wrapper1.scrollLeft = 0;
-                activeIndex1 = 0;
-            }
-        }, scrollInterval1);
-    });
-    document.querySelector('.about-us').addEventListener('mouseleave', function() {
-        clearInterval(autoScroll1);
-    });
-});
 
 
 
@@ -79,18 +42,3 @@ function getMonthName(month) {
     return monthNames[month];
 }
 
-function myFunction(index) {
-    var dots = document.getElementById("dots"+index);
-    var moreText = document.getElementById("more"+index);
-    var btnText = document.getElementById("myBtn"+index);
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = ">"; 
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "<"; 
-      moreText.style.display = "inline";
-    }
-  }

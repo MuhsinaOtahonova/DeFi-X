@@ -34,9 +34,7 @@ body {
     color: inherit;
     padding: 0;
 }
-[id^="more"] {
-    display: none;
-}
+
 a {
     text-decoration: none;
 }
@@ -131,16 +129,18 @@ ul {
 }
 
 /* why-defi */
-.box {
-    padding: 50px 25px;
+.why-defi-boxes{
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+.box{
+    padding: 20px 15px;
     background-color: #1d263b;
     border-radius: 10%;
-}
+    }
 .why-defi-icon {
     border-radius: 50%;
     font-size: x-large;
 }
-
 /* how-work */
 .how-work-title {
     max-width: 330px; 
@@ -171,25 +171,27 @@ ul {
     padding: 10px 15px;
     font-size: 50px;
 }
-
+.how-work-content .card-header button,
+.defi-popular-content .card-header button{
+   text-decoration: none;
+   color: white;
+}
 
 /* defi-popular */
-.wrapper,
-.wrapper1 {
+.wrapper{
     max-height: 100%;
     border: 10% solid rgba(20, 26, 43, 255);
     overflow-x: auto;
-    scroll-behavior: smooth;
-    transition: transform 0.5s ease-in-out;
+    
 }
-
 .wrapper::-webkit-scrollbar {
     width: 0;
 }
-.wrapper1::-webkit-scrollbar {
-    width: 0;
-}
 
+.defi-popular-boxes,
+.about-us-boxes{
+    gap: 15px;
+}
 .defi-popular-box,
 .about-us-box {
    padding: 50px 25px;
@@ -201,13 +203,13 @@ ul {
 .defi-advertisement-box {
     background-color: #1649ff;
     border-radius: 5%;
+   
 }
-.defi-advertisement-photo-box{
-    width: 100%;
-    height: 420px;
-    background-size: cover;
-    background-image: url("../img/defi-advertisement-phone.png");
+.defi-advertisement-photo{
+    width: 700px;
+    margin: -120px auto 0rem;
 }
+
 
 /* def-news */
 .defi-news-box1,
@@ -259,7 +261,82 @@ ul {
     color: white;
     font-size: smaller;
 }
+.email-input:hover {
+   background-color: #263252;
+   color: white;
+}
 
+
+@media screen and (min-width: 576px){
+    .defi-hero-photo {
+        margin-top: 20px;
+        height: 200px;
+        background-position: center;
+    }
+      /* defi-popular */
+      .defi-popular-box,
+      .about-us-box {
+       min-width: calc(50% - 8px);
+   }
+}
+@media screen and (min-width: 768px) {
+/* defi-hero */
+.defi-hero-photo {
+    height: 450px;
+    background-position: center;
+}
+ /* how-work */
+ .how-work-photo{
+    height: 300px;
+}
+.how-work-box{
+    min-width: 250px;
+}
+
+.defi-popular-box,
+.about-us-box {
+ min-width: calc(33.333% - 10px);
+}
+
+}
+@media screen and (max-width:768px){
+    .why-defi-boxes{
+        grid-template-columns: repeat(auto-fit,minmax(190px,1fr));
+    }
+    .navbar-collapse{
+        margin-top: 15px;
+        background-color: #263252;
+        color: white;
+        border-radius: 10%;
+    }
+    .nav-item:hover{
+        background-color: #1649ff;
+    }
+    .dropdown-item:hover{
+        background-color: #263252;
+        color: white;
+    }
+    .dropdown-menu{
+        background-color: #1d263b;
+    }
+    .dropdown:hover{
+        background-color: #263252;
+    }
+      /* defi-popular */
+      .defi-popular-box,
+      .about-us-box {
+       min-width: calc(50% - 8px);
+   }
+     /* defi-advertisement */
+     .defi-advertisement-photo{
+        width: 500px;
+        min-height: 35vh;
+        margin: -90px auto 0rem;
+    }
+.reklamButon{
+    display: none;
+}
+}
 @media screen and (max-width: 576px) {
     /* genel */
     .text{
@@ -274,7 +351,7 @@ ul {
     }
     .defi-hero-photo {
         margin-top: 20px;
-        height: 220px;
+        height: 250px;
         background-position: center;
     }
     /* how-work */
@@ -287,28 +364,20 @@ ul {
     .how-work-icon-a {
        display: none;
     }
-
+       /* defi-popular */
+       .defi-popular-box,
+       .about-us-box {
+        min-width: calc(100%);
+   }
+   /* defi-advertisement */
+   .defi-advertisement-photo{
+    width: 220px;
+    margin: -50px 0px 0rem;
+}
     /* defi-news */
     .defi-news-box1,
     .defi-news-box2 {
         height: 320px;
-    }
-  
-}
-
-@media screen and (min-width: 768px) {
-/* defi-hero */
-.defi-hero-photo {
-    height: 520px;
-    background-position: center;
-}
- /* how-work */
- .how-work-photo{
-    height: 400px;
-}
-/* defi-advertisement */
-.defi-advertisement-photo-box{
-    width: 100%;
-    height: 320px;
-}
+    }  
+ 
 }
