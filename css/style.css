@@ -303,25 +303,6 @@ ul {
     .why-defi-boxes{
         grid-template-columns: repeat(auto-fit,minmax(190px,1fr));
     }
-    .navbar-collapse{
-        margin-top: 15px;
-        background-color: #263252;
-        color: white;
-        border-radius: 10%;
-    }
-    .nav-item:hover{
-        background-color: #1649ff;
-    }
-    .dropdown-item:hover{
-        background-color: #263252;
-        color: white;
-    }
-    .dropdown-menu{
-        background-color: #1d263b;
-    }
-    .dropdown:hover{
-        background-color: #263252;
-    }
       /* defi-popular */
       .defi-popular-box,
       .about-us-box {
@@ -369,6 +350,25 @@ ul {
        .about-us-box {
         min-width: calc(100%);
    }
+   .navbar-collapse{
+    margin-top: 15px;
+    background-color: #263252;
+    color: white;
+    border-radius: 10%;
+}
+.nav-item:hover{
+    background-color: #1649ff;
+}
+.dropdown-item:hover{
+    background-color: #263252;
+    color: white;
+}
+.dropdown-menu{
+    background-color: #1d263b;
+}
+.dropdown:hover{
+    background-color: #263252;
+}
    /* defi-advertisement */
    .defi-advertisement-photo{
     width: 220px;
