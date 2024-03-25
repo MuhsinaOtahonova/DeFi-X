@@ -180,7 +180,7 @@ ul {
 /* defi-popular */
 .wrapper{
     max-height: 100%;
-    border: 10% solid rgba(20, 26, 43, 255);
+    border: 5px solid rgba(20, 26, 43, 255);
     overflow-x: auto;
     
 }
@@ -197,6 +197,7 @@ ul {
    padding: 50px 25px;
    background-color: #1d263b;
    border-radius: 10%;
+   width: 90px;
 }
 
 /* defi-advertisement */
